@@ -1,32 +1,24 @@
 [Global] DEV SETUP instructions
 ===============================
 
-## Install
-Install NodeJS v8.9.2
-Install Grunt.
+#   Install NodeJS v8.9.2
+#   Install Grunt.
 
 NPM PACKAGES
 ============
 #GITCMD>
+git clone https://github.com/cvrolf/blog-asyncawait-coroutineyield-2017.git
+cd blog-asyncawait-coroutineyield-2017
 npm install
-npm outdated
+npm run start
 
 GRUNT
 =============================================================
-
 #GITCMD>
 grunt watch
 
 # ***
-# ***DURING DEVELOPMENT****************************************************************************
-# ***
-
-#GITCMD>
-npm run start
-
-# ***
 # GUI DEBUGGER*****************************************************************************************
 # ***
-
 #GITCMD>
 npm run debug
