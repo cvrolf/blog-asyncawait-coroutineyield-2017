@@ -37,6 +37,6 @@ module.exports = function (grunt) {
 
     // Register the default tasks.
     grunt.registerTask('default', [
-        'eslint','watch'
+        'eslint'
     ]);
 };
