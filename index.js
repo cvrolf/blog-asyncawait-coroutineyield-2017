@@ -69,7 +69,7 @@ console.log(`  __filename:           ${__filename}`);
  * @doc const NAME = {declaration};
  */
 const TIMER_INTERVAL = 1000;
-const TIMER_TOTAL_DURATION = 15000;
+const TIMER_TOTAL_DURATION = 10000;
 
 
 /**
@@ -108,14 +108,11 @@ function usingCoroutineYield() {
         objResponse = yield doubleAfterSeconds(2);
         console.log('usingCoroutineYield() CY#1 | 2s | yielded objResponse: ', objResponse);
 
-        objResponse = yield doubleAfterSeconds(6);
-        console.log('usingCoroutineYield() CY#2 | 6s | yielded objResponse: ', objResponse);
-
         objResponse = yield Promise.resolve(100);
-        console.log('usingCoroutineYield() CY#3 | no delay | yields objResponse: ', objResponse);
+        console.log('usingCoroutineYield() CY#2 | no delay | yields objResponse: ', objResponse);
 
         console.log('usingCoroutineYield(): end');
-    })();
+    })(); // IIFE Immediately Invoked Function Expression
 }
 
 function usingAsyncAwait() {
@@ -124,21 +121,19 @@ function usingAsyncAwait() {
 
         let objResponse;
 
-        objResponse = await doubleAfterSeconds(4);
-        console.log('usingAsyncAwait() AA#1 | 4s | awaited objResponse: ', objResponse);
-
-        objResponse = await doubleAfterSeconds(8);
-        console.log('usingAsyncAwait() AA#2| 8s | awaited objResponse: ', objResponse);
+        objResponse = await doubleAfterSeconds(5);
+        console.log('usingAsyncAwait() AA#1 | 5s | awaited objResponse: ', objResponse);
 
         objResponse = await 200;
-        console.log('usingAsyncAwait() AA#3 | no delay | awaited objResponse: ', objResponse);
+        console.log('usingAsyncAwait() AA#2 | no delay | awaited objResponse: ', objResponse);
 
         console.log('usingAsyncAwait(): end');
-    })();
+    })(); // IIFE Immediately Invoked Function Expression
 }
 
 usingCoroutineYield();
 usingAsyncAwait();
+
 
 /**
  ** END

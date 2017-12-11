@@ -7,7 +7,6 @@ module.exports = function (grunt) {
          * JS ESLint
          *      @doc https://github.com/sindresorhus/grunt-eslint
          *      @doc https://github.com/babel/babel-eslint
-         *      @doc I use several .eslintrc.json files. A global es6-version for /* [nodejs] and an es5-version for /public/assets/js [browser]
          */
         eslint: {
             nodejs: [

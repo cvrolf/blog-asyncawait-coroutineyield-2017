@@ -2,8 +2,8 @@
 ===========================
 # Install NodeJS v8.9.2
 
-INSTALL & RUN
-=============
+CLONE & RUN
+===========
 #GITCMD>
 git clone https://github.com/cvrolf/blog-asyncawait-coroutineyield-2017.git
 cd blog-asyncawait-coroutineyield-2017
@@ -11,8 +11,8 @@ npm install
 grunt
 npm run start
 
-GRUNT
-=====
+GRUNT WATCH
+===========
 #GITCMD>
 grunt watch
 

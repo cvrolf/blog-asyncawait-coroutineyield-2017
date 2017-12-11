@@ -11,8 +11,7 @@
         "ecmaVersion": 2017
     },
     "globals": {
-        "debug": true,
-        "dummy-last-one": true
+        "debug": true
     },
     "rules": {
         "indent": [
