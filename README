@@ -1,0 +1,32 @@
+[Global] DEV SETUP instructions
+===============================
+
+## Install
+Install NodeJS v8.9.2
+Install Grunt.
+
+NPM PACKAGES
+============
+#GITCMD>
+npm install
+npm outdated
+
+GRUNT
+=============================================================
+
+#GITCMD>
+grunt watch
+
+# ***
+# ***DURING DEVELOPMENT****************************************************************************
+# ***
+
+#GITCMD>
+npm run start
+
+# ***
+# GUI DEBUGGER*****************************************************************************************
+# ***
+
+#GITCMD>
+npm run debug

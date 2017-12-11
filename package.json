@@ -1,0 +1,21 @@
+{
+    "name": "blog-asyncawait-coroutineyield-2017",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./index.js",
+        "debug": "node --inspect-brk ./index.js",
+        "trace": "node --trace-events-enabled ./index.js"
+    },
+    "engines": {
+        "node": ">= 8.9.2"
+    },
+    "dependencies": {
+        "bluebird": "~3.5.1"
+    },
+    "devDependencies": {
+        "grunt": "~1.0.1",
+        "grunt-contrib-watch": "~1.0.0",
+        "grunt-eslint": "~20.1.0"
+    }
+}

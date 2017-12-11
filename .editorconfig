@@ -1,0 +1,22 @@
+# editorconfig.org
+# Unix-style newlines (lf)
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.dust]
+##RHMOD
+trim_trailing_whitespace = false
+
+[*.html]
+##RHMOD
+trim_trailing_whitespace = false
+
+[*.md]
+trim_trailing_whitespace = false
